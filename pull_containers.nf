@@ -1,8 +1,13 @@
 #!/usr/bin/env nextflow
 
+/*
+
+Usage: nextflow run pull_containers.nf -resume -ansi-log false --singularityDir cache
+
+*/
+
 import nextflow.util.Escape
 import nextflow.container.SingularityCache
-
 
 //Container images specified in config files
 def containers = []
